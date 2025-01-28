@@ -1,4 +1,4 @@
-/*Made by ByMarco25:)
+/*Made by MarkusAVA:)
 17-03-2023*/
 #include <iostream>
 #include <cstdlib>
@@ -6,10 +6,10 @@
 #include <string>
 int main (){
 int choice;
-std::cout << "Welcome to the multi functional program!\n" << "Please choose one of the four options below: \n" << "1) Calculator\n" << "2) CURRENTLY SEMI FUNCTIONAL Magic 8-Ball\n" << "3) Guess the random number\n" << "4) Harry potter sorting hat\n";
+std::cout << "Welcome to the multi-functional program!\n" << "Please choose one of the four options below: \n" << "1) Calculator\n" << "2) CURRENTLY SEMI FUNCTIONAL Magic 8-Ball\n" << "3) Guess the random number\n" << "4) Harry potter sorting hat\n";
 std::cin >> choice;
 
-if (choice < 1 || choice > 4) { //This makes it so any number lower than 1 or higher than 4 wont break the program, and asks the user to input a new number
+if (choice < 1 || choice > 4) { //This makes it so any number lower than 1 or higher than 4 won't break the program, and asks the user to input a new number
     std::cout << "Please choose one of the above options!\n";
     return 1;
 }
@@ -77,7 +77,7 @@ while (true) {
 }
 std::cout << "You said: " << said << "\nThe Magic 8-Ball says: \n";
 std::srand(time(NULL));
-int answer = std::rand() % 10; // gets a random number from between 0 and 9
+int answer = std::rand() <= 10; // gets a random number from between 0 and 9
 
 if (answer == 0){ //Depending on the random number chosen by the program, a different output will be given to the user
     std::cout << "It is certain.\n";
